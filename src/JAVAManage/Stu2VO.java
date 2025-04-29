@@ -48,4 +48,5 @@ public class Stu2VO {
 		}
 		
 	}
+
 }

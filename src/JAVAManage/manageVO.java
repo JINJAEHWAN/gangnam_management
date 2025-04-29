@@ -1,5 +1,7 @@
 package JAVAManage;
 
+import java.util.*;
+
 public class manageVO {
 
 	   private String name;
