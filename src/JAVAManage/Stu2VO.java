@@ -1,5 +1,7 @@
 package JAVAManage;
 
+import test.Stu2VO;
+
 public class Stu2VO {
 	
 	private String name;
@@ -47,7 +49,9 @@ public class Stu2VO {
 		   return this;
 		}
 		
-		
+	    public Stu2VO build() {
+	       return new Stu2VO(this);
+	    }
 		
 	}
 
