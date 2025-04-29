@@ -55,5 +55,12 @@ public class Stu2VO {
 	}
 	
 	public Stu2VO(Stu2Builder bd){this.name=bd.name;this.korS=bd.korS;this.engS=bd.engS;this.matS=bd.matS;}
+	
+	public void print(Stu2VO st) {
+	      System.out.print("이름: "+st.getName());
+	      System.out.print(", 국어: "+st.getKorS());
+	      System.out.print(", 영어: "+st.getEngS());
+	      System.out.println(", 수학: "+st.getMatS());
+	   }
 
 }
