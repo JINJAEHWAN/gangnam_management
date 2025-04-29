@@ -1,7 +1,5 @@
 package JAVAManage;
 
-import test.Stu2VO;
-
 public class Stu2VO {
 	
 	private String name;
