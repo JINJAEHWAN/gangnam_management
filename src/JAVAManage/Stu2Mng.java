@@ -8,6 +8,7 @@ import JAVAmanage.Stu2VO.Stu2Builder;
 
 public class Stu2Mng {
 
+	
 	public void printline() {
 		System.out.println("======================================================");
 	}
@@ -55,4 +56,47 @@ public class Stu2Mng {
 		System.out.println("=========================검색완료=========================");
 	}
 
+public void FixStu(Scanner sc) {
+      printline();
+      if(stu2.size()==0) {
+         System.out.println("등록된 정보가 없습니다");
+         printline();
+         return;
+      }
+      System.out.print("수정할 이름: ");
+      String name = sc.next();
+      if(!stu2.containsKey(name)) {
+         System.out.println("해당 이름이 없습니다");
+         return;
+      }
+      for(String stuName : stu2.keySet()) {
+         if(stu2.get(stuName).getName().equals(name)) {
+            System.out.print("국어: ");
+            int kors = sc.nextInt();
+            System.out.print("영어: ");
+            int engs = sc.nextInt();
+            System.out.print("수학: ");
+            int mats = sc.nextInt();
+            
+            stu2.get(stuName).setKorS(kors);
+            stu2.get(stuName).setEngS(engs);
+            stu2.get(stuName).setMatS(mats);
+            break;
+         }
+      }
+      System.out.println("=======================수정완료=======================");
+   }
+
+   public void ShowStu() {
+      printline();
+      if(stu2.size()==0) {
+         System.out.println("등록된 정보가 없습니다");
+         printline();
+         return;
+      }
+      for(String stuName : stu2.keySet()) {
+         stu2.get(stuName).print(stu2.get(stuName));
+      }
+      System.out.println("=======================조회완료=======================");
+   }
 }
