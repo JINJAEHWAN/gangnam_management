@@ -1,7 +1,6 @@
 package JAVAManage;
 
-import study.Scanner;
-import study.Stu2Mng;
+import java.util.Scanner;
 
 public class main {
 
@@ -44,4 +43,3 @@ public class main {
 	   }
 	}
 
-}
