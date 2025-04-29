@@ -54,5 +54,27 @@ public class Stu2Mng {
 		}
 		System.out.println("=========================검색완료=========================");
 	}
+	
+	public void DelStu(Scanner sc) {
+		printline();
+		if(stu2.size()==0) {
+		   System.out.println("등록된 정보가 없습니다");
+		   printline();
+		   return;
+		}
+		System.out.print("삭제할 이름: ");
+		String name = sc.next();
+		if(!stu2.containsKey(name)) {
+		   System.out.println("해당 이름이 없습니다");
+		   return;
+		}
+		for(String stuName : stu2.keySet()) {
+		   if(stu2.get(stuName).getName().equals(name)) {
+		      stu2.remove(stuName);
+		      break;
+		   }
+		}
+		System.out.println("=======================삭제완료=======================");
+	}
 
 }

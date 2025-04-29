@@ -47,6 +47,8 @@ public class Stu2VO {
 		   return this;
 		}
 		
+		
+		
 	}
 
 }
