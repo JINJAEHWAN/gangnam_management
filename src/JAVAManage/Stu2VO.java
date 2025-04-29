@@ -9,6 +9,12 @@ public class Stu2VO {
 	   
 	   public Stu2VO() {}
 	   
+	   public Stu2VO(Stu2Builder bd) {
+		      this.name = bd.name;
+		      this.korS = bd.korS;
+		      this.engS = bd.engS;
+		      this.matS = bd.matS;
+		   }
 	   
 
 	   public int getKorS() {
