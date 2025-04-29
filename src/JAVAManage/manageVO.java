@@ -15,5 +15,11 @@ public class manageVO {
 	   public int getEngS() {
 	      return engS;
 	   }
+	   
+	   public void setEngS(int engS) {
+	      this.engS = engS;
+	   }
+	   
+	   
 	
 }
