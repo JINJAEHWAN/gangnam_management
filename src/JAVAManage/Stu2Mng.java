@@ -3,8 +3,6 @@ package JAVAManage;
 import java.util.HashMap;
 import java.util.Scanner;
 
-import JAVAmanage.Stu2VO;
-import JAVAmanage.Stu2VO.Stu2Builder;
 
 public class Stu2Mng {
 
