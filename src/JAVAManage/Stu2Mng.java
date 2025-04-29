@@ -3,14 +3,26 @@ package JAVAManage;
 import java.util.HashMap;
 import java.util.Scanner;
 
+<<<<<<< HEAD
+=======
+import JAVAmanage.Stu2VO;
+
+>>>>>>> main
 
 public class Stu2Mng {
 
-	
 	public void printline() {
 		System.out.println("======================================================");
 	}
 
+	public void print(Stu2VO st) {
+	      System.out.print("이름: "+st.getName());
+	      System.out.print(", 국어: "+st.getKorS());
+	      System.out.print(", 영어: "+st.getEngS());
+	      System.out.println(", 수학: "+st.getMatS());
+	   }
+	
+	
 	private HashMap<String, Stu2VO> stu2 = new HashMap<>();
 	Scanner sc = new Scanner(System.in);
 
@@ -119,4 +131,6 @@ public void FixStu(Scanner sc) {
       }
       System.out.println("=======================조회완료=======================");
    }
+   
+   
 }
